@@ -98,3 +98,38 @@ defined('H06BDB22FA5131A943A08FD13E410832F') or define('H06BDB22FA5131A943A08FD1
 # Modo Debug MyPrint
 # 
 defined('DEBUG_MY_PRINT') or define('DEBUG_MY_PRINT', false);
+#
+# protected DBGroup
+#
+if (
+    ($_SERVER['DOCUMENT_ROOT'] == '/var/www/html/seguro/public'
+        && $_SERVER['SERVER_NAME'] == '127.0.0.1'
+        && $_SERVER["SERVER_PORT"] !== 80
+    )
+    ||
+    ($_SERVER['DOCUMENT_ROOT'] == '/var/www/html/seguro/public'
+        && $_SERVER['SERVER_NAME'] == 'localhost'
+        && $_SERVER["SERVER_PORT"] !== 80
+    )
+    ||
+    ($_SERVER['DOCUMENT_ROOT'] == '/var/www/html/seguro/public'
+        && $_SERVER['SERVER_NAME'] == '10.146.84.140'
+        && $_SERVER["SERVER_PORT"] !== 80
+    )
+) {
+    # Ambiente Localhost
+    defined('DATABASE_CONNECTION_DATA') or define('DATABASE_CONNECTION_DATA', "seguro_devops");
+} elseif (
+    $_SERVER['SERVER_NAME'] == 'habilidade.com'
+    || $_SERVER['SERVER_NAME'] == 'habilidade.com'
+    || $_SERVER['SERVER_NAME'] == 'www.habilidade.com'
+) {
+} elseif (
+    $_SERVER['SERVER_NAME'] == 'localhost'
+    || $_SERVER['SERVER_NAME'] == '127.0.0.1'
+    || $_SERVER['SERVER_NAME'] == '10.146.84.140'
+    || $_SERVER['SERVER_NAME'] == '10.146.84.177'
+
+) {
+    defined('DATABASE_CONNECTION_DATA') or define('DATABASE_CONNECTION_DATA', "seguro_dev");
+}
