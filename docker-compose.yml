@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./src:/var/www/html/seguro
+    working_dir: /var/www/html/seguro # Definindo o diretório de trabalho
     ports:
       - "8008:80" # host:container
 
