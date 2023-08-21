@@ -1,2 +1,4 @@
-
 src/.env
+src/public/arquitetura/*
+src/public/conectabanco/*
+src/public/documentacao/*
