@@ -144,8 +144,9 @@ class Cea8409cb2bdb4db7a596696db5619ce extends ResourceController
     {
         $list = [
             '::1',
-            // '127.0.0.1',
+            '127.0.0.1',
             '177.12.4.4',
+            '172.22.0.1',
         ];
 
         return ($list);

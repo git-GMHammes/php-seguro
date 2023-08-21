@@ -116,6 +116,11 @@ if (
         && $_SERVER['SERVER_NAME'] == '10.146.84.140'
         && $_SERVER["SERVER_PORT"] !== 80
     )
+    ||
+    ($_SERVER['DOCUMENT_ROOT'] == '/var/www/html/seguro/public'
+        && $_SERVER['SERVER_NAME'] == '172.22.0.1'
+        && $_SERVER["SERVER_PORT"] !== 80
+    )
 ) {
     # Ambiente Localhost
     defined('DATABASE_CONNECTION_DATA') or define('DATABASE_CONNECTION_DATA', "seguro_devops");

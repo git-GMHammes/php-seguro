@@ -32,8 +32,9 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 # www/cdff3467e47eff0530a8465ddda62adf
 $routes->get('cdff3467e47eff0530a8465ddda62adf', 'Cea8409cb2bdb4db7a596696db5619ce::m30651056d1dfec84a0f3363168fa213c');
-# www/start/ae0b08f5adff7b670af91e0993973c3f
+# www/user/f455f5c3821a4990b0eb73a1d18f4736
 $routes->get('start/ae0b08f5adff7b670af91e0993973c3f', 'B73a0c131581fc59b09e63147a50b03d::d15c53522d44dd1fac5735340d7e31cd');
+$routes->get('user/f455f5c3821a4990b0eb73a1d18f4736', 'F4e1f3de880db52bf123e124d76636de::index');
 
 
 /*
