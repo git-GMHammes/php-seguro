@@ -123,7 +123,7 @@ if (
     )
 ) {
     # Ambiente Localhost
-    defined('DATABASE_CONNECTION_DATA') or define('DATABASE_CONNECTION_DATA', "seguro_devops");
+    defined('DATABASE_CONNECTION_DATA') or define('DATABASE_CONNECTION_DATA', "seguro_web");
 } elseif (
     $_SERVER['SERVER_NAME'] == 'habilidade.com'
     || $_SERVER['SERVER_NAME'] == 'habilidade.com'
@@ -136,5 +136,5 @@ if (
     || $_SERVER['SERVER_NAME'] == '10.146.84.177'
 
 ) {
-    defined('DATABASE_CONNECTION_DATA') or define('DATABASE_CONNECTION_DATA', "seguro_dev");
+    defined('DATABASE_CONNECTION_DATA') or define('DATABASE_CONNECTION_DATA', "seguro_web");
 }

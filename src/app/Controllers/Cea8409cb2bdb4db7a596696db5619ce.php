@@ -58,6 +58,7 @@ class Cea8409cb2bdb4db7a596696db5619ce extends ResourceController
     # route GET /www/sigla/rota
     # Informação sobre o controller
     # retorno do controller [JSON]
+    # C:\laragon\www\php-seguro\src\app\Controllers\Cea8409cb2bdb4db7a596696db5619ce.php
     public function m30651056d1dfec84a0f3363168fa213c($parameter = NULL)
     {
         // exit($_SERVER['REMOTE_ADDR']);
@@ -145,8 +146,10 @@ class Cea8409cb2bdb4db7a596696db5619ce extends ResourceController
         $list = [
             '::1',
             '127.0.0.1',
+            '172.29.0.1',
             '177.12.4.4',
             '172.22.0.1',
+            // '177.12.60.138',
         ];
 
         return ($list);
