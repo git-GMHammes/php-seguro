@@ -9,3 +9,4 @@ src/.env
 # src/public/writable/session/*
 # src/public/writable/cache/*
 # src/public/writable/logs/*
+src/public/info.php
