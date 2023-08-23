@@ -1,8 +1,11 @@
-src/.env
-src/public/arquitetura/*
-src/public/conectabanco/*
-src/public/documentacao/*
-src/writable/cache/*
-src/writable/debugbar/*
-src/writable/logs/*
-src/writable/session/*
+# src/.env
+# src/writable/debugbar/*
+# src/writable/uploads/*
+# src/writable/session/*
+# src/writable/cache/*
+# src/writable/logs/*
+# src/public/writable/debugbar/*
+# src/public/writable/uploads/*
+# src/public/writable/session/*
+# src/public/writable/cache/*
+# src/public/writable/logs/*
