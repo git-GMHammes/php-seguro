@@ -1,4 +1,4 @@
-# src/.env
+src/.env
 # src/writable/debugbar/*
 # src/writable/uploads/*
 # src/writable/session/*
