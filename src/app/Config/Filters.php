@@ -65,7 +65,7 @@ class Filters extends BaseConfig
     public array $filters = [
         'jwt' => ['before' => [
             'out',
-            'cdff3467e47eff0530a8465ddda62adf'
+            // 'cdff3467e47eff0530a8465ddda62adf'
         ]],
         'jwtcookie' => ['before' => [
             'out'

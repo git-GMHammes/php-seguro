@@ -18,7 +18,8 @@ class Cea8409cb2bdb4db7a596696db5619ce extends ResourceController
         // $this->ModelResponse = new NomeModel();
         $this->uri = new \CodeIgniter\HTTP\URI(current_url());
         helper([
-            'g13f8814e7d0fb0d0f3510d447673bac5'
+            'g13f8814e7d0fb0d0f3510d447673bac5',
+            'cookie'
         ]);
         return NULL;
     }
@@ -61,14 +62,23 @@ class Cea8409cb2bdb4db7a596696db5619ce extends ResourceController
     # C:\laragon\www\php-seguro\src\app\Controllers\Cea8409cb2bdb4db7a596696db5619ce.php
     public function m30651056d1dfec84a0f3363168fa213c($parameter = NULL)
     {
+        $this->m1a8a5ed07e68228237069c9d74995629();
+        // $token = get_cookie('token', true);
         // exit($_SERVER['REMOTE_ADDR']);
         $c960116477798f1d0c060fca2472e500 = $this->applyFilter();
         $b0e43df1a1b37fecb7332a198df41495 = $_SERVER['REMOTE_ADDR'];
         if (!in_array($b0e43df1a1b37fecb7332a198df41495, $c960116477798f1d0c060fca2472e500)) {
             print_r("Você não tem acesso à este sistema." . "<br>");
-            exit("Seu IP: " . $b0e43df1a1b37fecb7332a198df41495);
+            print_r("Seu IP: " . $b0e43df1a1b37fecb7332a198df41495 . "<br>");
+            $data = [
+                m48fc9c2081401ee8bd4214a082916f74('aG9zdA=='),
+                m48fc9c2081401ee8bd4214a082916f74('ZGF0YWJhc2U='),
+                m48fc9c2081401ee8bd4214a082916f74('dXNlcg=='),
+                m48fc9c2081401ee8bd4214a082916f74('cGFzc3dvcmQ='),
+            ];
+            $response = $this->response->setJSON($data, 201);
+            return ($response);
         }
-        $this->m1a8a5ed07e68228237069c9d74995629();
         try {
             $apiRequest = array(
                 'G4D9EEC8CB8BB4E2CB92336AA92FABD4B' => m48fc9c2081401ee8bd4214a082916f74('bXlzcWwwMi1mYXJtMS5raW5naG9zdC5uZXQ='),
@@ -149,7 +159,7 @@ class Cea8409cb2bdb4db7a596696db5619ce extends ResourceController
             '172.29.0.1',
             '177.12.4.4',
             '172.22.0.1',
-            // '177.12.60.138',
+            '177.12.60.138',
         ];
 
         return ($list);

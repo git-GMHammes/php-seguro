@@ -18,7 +18,6 @@ class JwtFilter implements FilterInterface
         require_once(APPPATH . 'Libraries/JWT/src/SignatureInvalidException.php');
         require_once(APPPATH . 'Libraries/JWT/src/JWT.php');
         require_once(APPPATH . 'Libraries/JWT/src/Key.php');
-
         $keys = [
             "key1" => new \Firebase\JWT\Key(H06BDB22FA5131A943A08FD13E410832F, 'HS256')
         ];
